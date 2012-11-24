@@ -1,0 +1,42 @@
+<h1 class="top-round" style="border-top-left-radius: 10px; border-top-right-radius: 10px; ">Listing pages
+<span style="float:right;"><a href="/pages/new" class="top-buttons" style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; ">New Page</a></span></h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Overview</th>
+    <th>Short desc</th>
+    <th>Metakeywords</th>
+    <th>Metadescription</th>
+    <th>Metatitle</th>
+    <th>Status</th>
+    <th>Show on websites</th>
+    <th>Show order</th>
+    <th>Contant</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pages.each do |page| %>
+  <tr>
+    <td><%= page.title %></td>
+    <td><%= page.overview %></td>
+    <td><%= page.short_desc %></td>
+    <td><%= page.metakeywords %></td>
+    <td><%= page.metadescription %></td>
+    <td><%= page.metatitle %></td>
+    <td><%= page.status %></td>
+    <td><%= page.show_on_websites %></td>
+    <td><%= page.show_order %></td>
+    <td><%= page.contant %></td>
+    <td><%= link_to 'Show', page %></td>
+    <td><%= link_to 'Edit', edit_page_path(page) %></td>
+    <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%#= link_to 'New Page', new_page_path %>

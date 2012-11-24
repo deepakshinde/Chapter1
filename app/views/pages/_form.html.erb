@@ -1,0 +1,63 @@
+<script type="text/javascript">
+  tinyMCE.init({
+    mode: 'textareas',
+    theme: 'advanced'
+  });
+</script>
+<%= form_for(@page) do |f| %>
+  <% if @page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@page.errors.count, "error") %> prohibited this page from being saved:</h2>
+
+      <ul>
+      <% @page.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :overview %><br />
+    <%= f.text_area :overview , :class => :mceEditor %>
+  </div>
+  <div class="field">
+    <%= f.label :short_desc %><br />
+    <%= f.text_area :short_desc , :class => :mceEditor %> %>
+  </div>
+  <div class="field">
+    <%= f.label :metakeywords %><br />
+    <%= f.text_area :metakeywords %>
+  </div>
+  <div class="field">
+    <%= f.label :metadescription %><br />
+    <%= f.text_area :metadescription %>
+  </div>
+  <div class="field">
+    <%= f.label :metatitle %><br />
+    <%= f.text_area :metatitle %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.check_box :status %>
+  </div>
+  <div class="field">
+    <%= f.label :show_on_websites %><br />
+    <%= f.check_box :show_on_websites %>
+  </div>
+  <div class="field">
+    <%= f.label :show_order %><br />
+    <%= f.number_field :show_order %>
+  </div>
+  <div class="field">
+    <%= f.label :contant %><br />
+    <%= f.text_area :contant , :class => :mceEditor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

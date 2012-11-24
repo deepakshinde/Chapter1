@@ -1,0 +1,219 @@
+body { background:#f1f1f1; color: #333; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;  }
+
+body, p, ol, ul, h1, h2, h3 ,h4, h5 , span, strong, table {
+  font-size:   13px;
+  line-height: 18px;
+  list-style:none;
+  padding:0px;
+  margin:0px;
+    font-family: 'Open Sans', serif;
+}
+
+
+
+a { color: #000; font-weight:bold }
+
+
+img{
+	border:0;
+}
+
+a{color:#21759B}
+.head-table{  background:#323445; margin-bottom:5px; color:#FFF;}
+.head-table a{  color:#21759B; }
+
+
+
+.main-content-div h1 { font-size:15px; background:#0197E4;  width:95%; color:#fff; text-transform:uppercase; padding:8px 1% ; border-bottom:solid 2px #ddd}
+
+h1{ font-size:18px; padding:5px; width:100%; background:#ddd;  color:#000; text-transform:uppercase; }
+h2{font-size:16px; padding:5px 0;}
+h3{font-size:14px; padding:5px 0;}
+
+
+.admin-wrap{ width:95%; padding:10px; min-height:200px; margin:auto; }
+.admin-header{ background:#fff; padding:10px 50px; border-bottom:solid 5px #0097E4}
+.admin-wrap textarea{ width:90%; height:100px}
+.admin-wrap input[type=text] { width:90%; }
+.admin-wrap select{ width:90%; }
+.admin-sub-title{ padding-bottom:5px; margin-bottom:5px; font-size:16px;  font-weight:bold; border-bottom:solid 1px #ddd; background:#ddd; padding:5px;}
+.admin-main-button{ padding:5px 10px; background:#44342D; border:solid 1px #403737; color:#FFF; font-size:18px; font-weight:bold}
+
+.admin-main-button:hover{  background:#C6BBB0;  color:#403737; font-size:18px; font-weight:bold}
+.admin-asset-box{ margin-top:10px; padding:1%; width:100%; border: solid 1px #ddd; margin-bottom:10px; margin-right:1%; min-height:300px;}
+.admin-links li { padding:8px 10px; background:#eee;border-bottom:solid 1px #ccc; border-top:solid 2px #fff}
+.admin-links li a{ font-size:12px;color:#21759B }
+
+
+.main-content-div{ border:solid 1px #999; background:#fff; padding:10px}
+.left-links-div{background:#fff;}
+
+
+
+.admin-images li{
+	float:left;
+	margin:5px;
+}
+.errorExplanation ul{
+	list-style:none;
+}
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+
+#error_explanation ul {
+  margin-top: 10px;
+}
+
+
+#error_explanation ul li {
+  font-size: 12px;
+  color:#f00
+}
+
+
+
+
+
+.scaffolded
+{
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: #000;
+  background: #bcd0e4 url("widget-table-bg.jpg") top left repeat-x;
+}
+
+.scaffolded a
+{
+	
+}
+
+.scaffolded th, .scaffolded td
+{
+  border: 1px dotted #666;
+
+  text-align: left;
+  color:#444;
+}
+
+
+.scaffolded th[scope=col]
+{
+  color:#036;
+  background-color:#325272;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  border-bottom: 2px solid #333;
+  border-right: 2px solid #333;
+}
+
+.scaffolded-even{ background:#FFF}
+.scaffolded-odd{ background:#f4f4f4}
+
+
+
+.scaffolded-thumbnail{width:105px;}
+.scaffolded tr:hover th[scope=row], .scaffolded tr:hover td
+{
+	background:#FFC;
+  color: #000;
+}
+
+.adder{ text-align:right; padding:10px;}
+
+.top-buttons{ background:#000000; color:#aaa; padding:5px; font-size:12px;}
+.top-buttons:hover{ background:#000; color:#fff}
+.top-buttons:visited{ background:#000; color:#fff}
+
+.admin-subTitle2{font-size:15px;color:#3D5C6D;font-weight:bold}
+.link-style{color:#333;font-weight:normal; background: url(/images/black_arrowBullet.gif) no-repeat left; padding:0 0px 0 20px;}
+.link-style:visited{color:#333;font-weight:normal;}
+
+.link-style2{color:#000;font-weight:bold;}
+.link-style2:visited{color:#000;font-weight:bold;}
+
+.user-box{ border:solid 1px #ddd; width:19%; float:left}
+
+.adminSelect select{width:90px}
+.edit_asset{color:#21759B;}
+.edit_asset:visited{color:#21759B;}
+
+th.sortup{ background: url(/images/admin/up.png) no-repeat  90% #DDEEFF;}
+th.sortdown{background:url(/images/admin/down.png) no-repeat  90% #DDEEFF;}
+
+.sort_div{ float:right; width:20px;}
+.sortlink{ text-decoration:underline; cursor:pointer}
+
+
+
+
+
+
+
+	/*-------------SEARCHABLE - SORTABLE STARTS-------------------------------*/
+	
+	.searchable-sortable{ background:#BCD0E4; padding:10px 20px 0 20px;}
+	.searchable-sortable input{ margin-right:25px; width:120px}
+	
+	/*-------------SEARCHABLE - SORTABLE ENDS -------------------------------*/
+	
+	
+	.button{ border:solid 1px #aaa; background:#AEAEAE;color:#000;  padding:5px;}
+.button:visited{ color:#000;text-decoration:none}
+.button:hover{ border:solid 1px #222; background:#fff; color:#000}
+
+.button1{ border:solid 1px #ddd; background:#DA9400; color:#fff; padding:5px;}
+.button1:visited{ color:#FFFFFF;text-decoration:none}
+.button1:hover{ border:solid 1px #222; background:#fff; color:#000}
+
+.button2{ border:solid 1px #ddd; background:#2A87C4; color:#FFFFFF; padding:5px;}
+.button2:visited{ color:#FFFFFF;text-decoration:none}
+.button2:hover{ border:solid 1px #222; background:#fff; color:#000}
+
+.button3{ border:solid 1px #ddd; background:#6B9120;color:#FFFFFF; padding:5px;}
+.button3:visited{ color:#FFFFFF;text-decoration:none}
+.button3:hover{ border:solid 1px #222; background:#fff; color:#000}
+
+.button4{ border:solid 1px #ddd; background:#B64638; color:#FFFFFF;padding:5px;}
+.button4:visited{ color:#FFFFFF;text-decoration:none}
+.button4:hover{ border:solid 1px #222; background:#fff; color:#000}

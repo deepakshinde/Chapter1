@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chapter1</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  
+</head>
+<!--
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true" screen_capture_injected="true">
+ -->
+<body>
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">LOgo</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./getting-started.html">Project</a>
+              </li>
+              <li class="">
+                <a href="./scaffolding.html">About Us</a>
+              </li>
+              <li class="">
+                <a href="./base-css.html">Contact</a>
+              </li>
+              <li class="">
+                <a href="./components.html">Event</a>
+              </li>
+             
+                <% if user_signed_in? %>
+                 <li class="">
+                 	<a href="">
+			          Logged in as <strong><%= current_user.email %></strong>
+			      </a>
+                 </li>     
+			     <li class="">    
+			          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %>
+			     </li>   
+			      <li class="">    
+			          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+			     </li>      
+			    <% end %> 
+	
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+
+
+<div class="admin-wrap" style="margin-top:50px;border:1px solid #e7e7e7; width: 78%;">
+<table width="100%" cellpadding="5" cellspacing="0" border="0">
+<tr>
+<td valign="top" width="20%">
+
+<table  style="width:100%" cellpadding="5" cellspacing="0" border="0">
+        <tr>
+        <td >
+	<div class="round left-links-div" style="border:solid 1px #aaa">
+        <ul class="admin-links" style="margin: 0px;">
+              <li class="top-round"><a href="/admin"><img src="/assets/admin/dashboard.png" alt="" align="absmiddle" /> Dashboard</a></li>
+              <li><a href="/projects"><img src="/assets/admin/community.png" alt="" align="absmiddle" />Site Seeting</a></li>
+	    
+	        <li>
+	        	<a href="/collections"><img src="/assets/admin/collection.png" alt="" align="absmiddle" /> Home Collections Pages</a>
+	        </li>
+	       
+	       <li><a href="/pages"><img src="/assets/admin/page.png" alt="" align="absmiddle" /> Pages</a></li>
+	        <li><a href="/pages"><img src="/assets/admin/page.png" alt="" align="absmiddle" />Metacontents</a></li>
+	      
+	       </ul>
+	 </div>
+          </td>    
+        </tr>
+     </table>
+</td>
+
+<td valign="top" >
+<div class="round main-content-div">
+    <%= yield %>
+<div>
+</td>
+
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  overview: MyText
+  short_desc: MyText
+  metakeywords: MyText
+  metadescription: MyText
+  metatitle: MyText
+  status: false
+  show_on_websites: false
+  show_order: 1
+  contant: MyText
+
+two:
+  title: MyString
+  overview: MyText
+  short_desc: MyText
+  metakeywords: MyText
+  metadescription: MyText
+  metatitle: MyText
+  status: false
+  show_on_websites: false
+  show_order: 1
+  contant: MyText
